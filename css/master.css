@@ -1,0 +1,186 @@
+/* Start Variables */
+
+/* variables will use many times */
+
+:root {
+  --backgroundcontainer-color: #faf8f4;
+  --textlinkcolor: #db4b44;
+  --textlinkblue: #092076;
+  --background-image: url(../images/Portal%20Assets/SVG/Intersection\ 1.svg);
+  --background-imagepng: url(../images/Portal%20Assets/PNG/BG.png);
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* font desgin */
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+/* control for page */
+
+.background {
+  position: relative;
+  background: var(--backgroundcontainer-color);
+  background-image: var(--background-image);
+  padding: 15px;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* End Global Rules */
+
+/* start content */
+
+/* .container-shape {
+} */
+
+.login-content {
+  direction: rtl;
+  position: relative;
+  margin-right: 90px;
+  margin-top: 15px;
+}
+
+.login-content img {
+  width: 116px;
+  height: 39px;
+  opacity: 100%;
+}
+.language-logo {
+  position: relative;
+  bottom: 57px;
+  margin-left: 15px;
+  cursor: pointer;
+  display: inline-block;
+}
+.language-logo {
+  transition: transform 0.2s ease-in-out;
+}
+.language-logo:hover {
+  transform: translate(0, -6px);
+}
+
+.style-icons {
+  position: absolute;
+  direction: rtl;
+  width: 50%;
+  height: calc(100% - 224px);
+  margin-top: 20px;
+  right: 9%;
+  overflow: auto;
+}
+
+.style-icons::-webkit-scrollbar {
+  display: none;
+}
+
+.buttons-of-icons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons-of-icons > div {
+  margin: 15px 15px 20px;
+  height: calc(100% - 67px);
+}
+
+.buttons-of-icons .box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  padding-top: 20px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 15px;
+  opacity: 1;
+}
+
+.buttons-of-icons .box .circle,
+.buttons-of-icons .box .circle-blue {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.icons-images,
+svg {
+  margin-top: 18px;
+}
+
+.circle {
+  background: #feecec 0% 0% no-repeat padding-box;
+}
+
+.circle-blue {
+  background: #ecf0fe 0% 0% no-repeat padding-box;
+}
+.flex-icons {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.flex-icons:hover {
+  transform: translate(0, -10px);
+}
+
+.flex-icons .aicons,
+.flex-icons .aicons-blue,
+.flex-icons .aicons-att,
+.flex-icons.capitalletter {
+  text-align: center;
+  opacity: 1;
+}
+.flex-icons .aicons,
+.flex-icons .aicons-blue,
+.flex-icons .aicons-att {
+  text-transform: capitalize;
+}
+.flex-icons .capitalletter {
+  text-transform: uppercase;
+}
+
+.flex-icons .aicons,
+.flex-icons .aicons-blue {
+  font-size: 15.5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-spacing: normal;
+  line-height: 2;
+}
+
+.aicons,
+.aicons-att {
+  color: var(--textlinkcolor);
+}
+
+.aicons-blue {
+  margin-top: 50px;
+  color: var(--textlinkblue);
+}
+
+.aicons-att {
+  font-size: 12.5px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+/* end content */
